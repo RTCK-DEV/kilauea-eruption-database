@@ -164,7 +164,7 @@ def main(argv=None) -> int:
     rn = sub.add_parser("release-notes", parents=[common],
                         help="render the notes for a full-database release")
     rn.add_argument("--tag", required=True, help="release tag, e.g. db-2026-08-23")
-    rn.add_argument("--repo", default="RTCK-reina/kilauea-eruption-database")
+    rn.add_argument("--repo", default="RTCK-DEV/kilauea-eruption-database")
     rn.add_argument("--full-sha", required=True,
                     help="sha256 of the database being published")
     rn.add_argument("--parts-dir", required=True,

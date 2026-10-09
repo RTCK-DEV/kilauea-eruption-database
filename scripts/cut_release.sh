@@ -19,7 +19,7 @@ set -euo pipefail
 
 DB=data/kilauea.db
 CORE=data/kilauea_core.db
-REPO=RTCK-reina/kilauea-eruption-database
+REPO=RTCK-DEV/kilauea-eruption-database
 TAG=""
 WORK=""
 PUBLISH=0

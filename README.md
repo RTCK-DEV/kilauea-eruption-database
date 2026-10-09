@@ -1,6 +1,6 @@
 # Kīlauea eruption database
 
-[![tests](https://github.com/RTCK-reina/kilauea-eruption-database/actions/workflows/tests.yml/badge.svg)](https://github.com/RTCK-reina/kilauea-eruption-database/actions/workflows/tests.yml)
+[![tests](https://github.com/RTCK-DEV/kilauea-eruption-database/actions/workflows/tests.yml/badge.svg)](https://github.com/RTCK-DEV/kilauea-eruption-database/actions/workflows/tests.yml)
 
 A reproducible SQLite database of Kīlauea eruption, deformation, seismicity and
 gas data, assembled from public USGS and Smithsonian sources, with feature views
@@ -79,7 +79,7 @@ the latest release: gzipped (4.3 GB to 565 MB) and split into 500 MB parts, so a
 failed transfer costs one part rather than the whole file.
 
 ```
-gh release download -R RTCK-reina/kilauea-eruption-database \
+gh release download -R RTCK-DEV/kilauea-eruption-database \
     -p 'kilauea.db.gz.part*' -p 'SHA256SUMS.txt'
 shasum -a 256 -c SHA256SUMS.txt            # verify the parts before joining
 cat kilauea.db.gz.part* | gunzip > data/kilauea.db
